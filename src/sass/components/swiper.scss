@@ -1,0 +1,83 @@
+@use '../global' as *;
+
+.image {
+    @include grid(1, 1rem);
+    overflow: hidden;
+    .image-display {
+      overflow: hidden;
+      img{
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+      }
+      .swiper-button-prev{
+        left:30;
+        color:$darkPrimaryColor;
+      }
+      .swiper-button-next{
+        left:30;
+        color:$darkPrimaryColor;
+      }
+      .swiper-pagination-bullet {
+    background: $primaryColor;
+
+    &.swiper-pagination-bullet-active {
+      background: $primaryColor;
+    }
+  }
+    }
+    .image-select {
+      .swiper-slide{
+        cursor: pointer;
+        border:$border;
+        &-thumb-active{
+          border-color:$darkPrimaryColor;
+          
+        }
+      }
+      &-item {
+        width: 100%;
+        overflow: hidden;
+        img{
+          object-fit: cover;
+          box-shadow: $box-shadow;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      
+    }
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 0 !important;
+    object-fit: cover;
+    // overflow: hidden;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    overflow: hidden;
+    // object-fit: cover;
+    font-size: 18px;
+    background: #fff;
+    // transform: none !important;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+  }

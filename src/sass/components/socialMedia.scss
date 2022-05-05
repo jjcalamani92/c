@@ -1,0 +1,25 @@
+@use '../global' as *;
+
+.share {
+  display: flex;
+  margin-top: 1rem;
+  a {
+    padding: 1rem;
+    background: $white;
+    color: $darkPrimaryColor;
+    margin-right: 0.5rem;
+    transition: all 0.5s ease;
+    .iconS {
+      font-size: 3rem;
+      height: 3rem;
+      width: 3rem;
+      line-height: 3rem;
+      text-align: center;
+      align-items: center;
+    }
+    &:hover {
+      background: $lightPrimaryColor;
+      transition: all 0.5s ease;
+    }
+  }
+}

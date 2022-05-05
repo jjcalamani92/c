@@ -1,0 +1,30 @@
+@use '../global' as *;
+.count{
+  display: flex;
+  .title{
+    @include title(3rem, $primaryText, capitalize, 700);
+    margin-right:4rem;
+  }
+  .counter{
+    display: inline-flex;
+    text-align: center;
+    align-items:center;
+    font-size: 2.5rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+    
+    
+    .icon{
+      color: $primaryColor;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $darkPrimaryColor;
+        transition: all 0.5s ease;
+      }
+    }
+    p{
+      margin: 0 3rem;
+      color: $primaryText;
+    }
+  }
+}

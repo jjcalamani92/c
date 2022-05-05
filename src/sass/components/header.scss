@@ -1,0 +1,255 @@
+@use '../global' as *;
+
+header{
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $white;
+  box-shadow: $box-shadow;
+  .icons-search{
+    display: flex;
+  }
+  .search {
+    display: none;
+    width: 20rem;
+    background: $white;
+    transform: scale(0);
+    transition: all 0.5s ease;
+    transform-origin: top right;
+    border: $border;
+    margin-right: .5rem;
+    input {
+      font-size: 1.7rem;
+      // padding: 0 1.2rem;
+      // height: 100%;
+      width: 100%;
+      text-transform: none;
+      color: $secondaryText;
+      border-radius: .5rem;
+    }
+    label {
+      display: flex;
+      height: 100%;
+      font-size: 2.5rem;
+      padding-right: 1.5rem;
+      color: $primaryText;
+      align-items: center;
+      // padding: 0 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background: $backgroundColor;
+      .icon {
+        margin: 0 1rem;
+      }
+      &:hover {
+        background: $primaryColor;
+        color: $white;
+        transition: all 0.3s ease;
+      }
+    }
+    &.active{
+      transition: all 0.5s ease;
+      transform: scale(1);
+    }
+    @include tablet{
+      display: none;
+    }
+    }
+  .logo{
+    display: flex;
+    align-items: center;
+      img{
+        height: 8rem;
+        width: auto;
+      }
+      @include tablet{
+        img{
+          height: 5rem;
+        }
+      }
+    }
+  .icons {
+  display: flex;
+  align-items: center;
+  
+  .icon {
+    @include icon(2.5rem);
+    color: $primaryText;
+    transition: all 0.5s ease;
+    background: $backgroundColor;
+    margin-right: .5rem;
+    cursor: pointer;
+    &:hover{
+      color: $white;
+      transition: all 0.5s ease;
+      background: $primaryColor;
+    }
+  }
+  
+  .cart{
+    position: relative;
+    span{
+      position: absolute;
+      top: -1rem;
+      right: -.5rem;
+      background: $primaryColor;
+      color: $white;
+      width: 2.5rem;
+      height: 2.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      border-radius: 50%;
+      &:hover{
+        background: $darkPrimaryColor;
+      }
+    }
+  }
+  .bars-icon{
+    display: none;
+  }
+  @include desktop{
+    .bars-icon{
+      display: block;
+    }
+  }
+}
+.navbar{
+  display: flex;
+  align-items:center;
+  .nav-links > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .nav-link > a{
+      line-height: 3rem;
+      color: $primaryText;
+      padding: 1.5rem 2rem;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: .5s;
+      text-transform: capitalize;
+      .icon{
+        margin-left: 1rem;
+      }
+    }
+    .nav-link{
+      position: relative;
+      z-index: 1;
+      &:hover > a{
+        transform: scale(1.1);
+      }
+      
+    }
+  }
+}
+
+.dropdown{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  // width: 100%;
+  transform: translateY(10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s;
+  width: auto;
+}
+
+.dropdown ul{
+  position: relative;
+}
+
+.dropdown-link > a{
+  display: flex;
+  background-color: $backgroundColor;
+  color: $primaryText;
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  transition: .3s;
+  text-transform: capitalize;
+}
+
+.dropdown-link:hover > a{
+  background-color: $accentColor;
+  color: #fff;
+}
+
+.dropdown-link:not(:nth-last-child(2)){
+  border-bottom: 1px solid #efefef;
+}
+
+.dropdown-link .icon{
+  transform: rotate(90deg);
+}
+
+.arrow{
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: -5.5px;
+  left: 32px;
+  background-color: $darkPrimaryColor;
+  transform: rotate(45deg);
+  cursor: pointer;
+  transition: .3s;
+  z-index: -1;
+}
+
+.dropdown-link:first-child:hover ~ .arrow{
+  background-color: $accentColor;
+}
+
+.dropdown-link{
+  position: relative;
+}
+
+.dropdown.second{
+  top: 0;
+  left: 100%;
+  padding-left: .8rem;
+  cursor: pointer;
+  transform: translateX(10px);
+}
+
+.dropdown.second .arrow{
+  top: 10px;
+  left: -5.5px;
+}
+
+.nav-link:hover > .dropdown,
+.dropdown-link:hover > .dropdown{
+  transform: translate(0, 0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+@keyframes animation{
+  from{
+      opacity: 0;
+      transform: translateY(15px);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+@include desktop{
+  .navbar{
+  display: none;
+}
+}
+
+}

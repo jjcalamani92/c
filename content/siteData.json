@@ -1,0 +1,134 @@
+{
+	"primaryColor": "#FFC107",
+	"name": "chocoexpress",
+	"domain": "chocoexpress.com",
+	"logo": "https://res.cloudinary.com/dvcyhn0lj/image/upload/v1649541738/pinturas/PUNTO_COLORS_EXPRESS_CHOCO_yoygoy.png",
+	"phoneNumber": 68175851,
+	"map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d478.12206819657405!2d-68.14811629921392!3d-16.527281696176196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf63438207b7%3A0x32a48a41599e5d72!2sGran%20Plaza%2C%20Av.%20B%2C%20El%20Alto!5e0!3m2!1ses!2sbo!4v1646946478230!5m2!1ses!2sbo",
+	"theme": [
+		{
+			"light": {
+				"primaryColor": "#FFC107",
+				"darkPrimaryColor": "#FFA000",
+				"lightPrimaryColor": "#FFECB3",
+				"primaryText": "#212121",
+				"secondaryText": "#757575",
+				"accentColor": "#FFC107",
+				"backgroundColor": "#eee",
+				"white": "#ffffff",
+				"black": "#000000"
+			}
+		},
+		{
+			"dark": {
+				"primaryColor": "#FFC107",
+				"darkPrimaryColor": "#FFA000",
+				"lightPrimaryColor": "#FFECB3",
+				"primaryText": "#212121",
+				"secondaryText": "#757575",
+				"accentColor": "#FFC107",
+				"backgroundColor": "#eee",
+				"white": "#ffffff",
+				"black": "#000000"
+			}
+		}
+	],
+	"pages": [
+		{
+			"label": "home",
+			"url": "",
+			"has_subnav": false
+		},
+		{
+			"label": "linea automotiva",
+			"url": "linea-automotiva",
+			"has_subnav": true,
+			"subnav_links": [
+				{
+					"label": "poliuretano",
+					"url": "poliuretano"
+				},
+				{
+					"label": "acrilico",
+					"url": "acrilico"
+				},
+				{
+					"label": "gloss",
+					"url": "gloss"
+				},
+				{
+					"label": "protector de chasis",
+					"url": "protector-de-chasis"
+				},
+				{
+					"label": "masilla",
+					"url": "masilla"
+				},
+				{
+					"label": "primer",
+					"url": "primer"
+				},
+				{
+					"label": "mateante",
+					"url": "mateante"
+				},
+				{
+					"label": "kit",
+					"url": "kit"
+				}
+			]
+		},
+		{
+			"label": "servicios",
+			"url": "servicios"
+		},
+		{
+			"label": "contacto",
+			"url": "contacto"
+		}
+	],
+	"social_links": [
+		{
+			"label": "facebook",
+			"url": "https://facebook.com/",
+			"icon_class": "facebook",
+			"new_window": true
+		},
+		{
+			"label": "instagram",
+			"url": "https://www.instagram.com/",
+			"icon_class": "instagram",
+			"new_window": true
+		},
+		{
+			"label": "twiter",
+			"url": "https://twiter.com/",
+			"icon_class": "twiter",
+			"new_window": true
+		},
+		{
+			"label": "linkedin",
+			"url": "https://linkedin.com/",
+			"icon_class": "linkedin",
+			"new_window": true
+		},
+		{
+			"label": "pinterest",
+			"url": "https://pinterest.com/",
+			"icon_class": "pinterest",
+			"new_window": true
+		},
+		{
+			"label": "whatsApp",
+			"url": "https://whatsApp.com/",
+			"icon_class": "whatsApp",
+			"new_window": true
+		},
+		{
+			"label": "telegram",
+			"url": "https://telegram.com/",
+			"icon_class": "telegram",
+			"new_window": true
+		}
+	]
+}

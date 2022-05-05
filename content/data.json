@@ -1,0 +1,138 @@
+{
+	"title": "chocoexpress",
+	"domain": "chocoexpress.com",
+	"phoneNumber": 68175851,
+	"path_prefix": "/",
+	"palette": "blue",
+	"map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d478.12206819657405!2d-68.14811629921392!3d-16.527281696176196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf63438207b7%3A0x32a48a41599e5d72!2sGran%20Plaza%2C%20Av.%20B%2C%20El%20Alto!5e0!3m2!1ses!2sbo!4v1646946478230!5m2!1ses!2sbo",
+	"header": {
+		"title": "Libris",
+		"logo_img": "https://res.cloudinary.com/dvcyhn0lj/image/upload/v1649541738/pinturas/PUNTO_COLORS_EXPRESS_CHOCO_yoygoy.png",
+		"logo_img_alt": "Libris logo",
+		"has_nav": true,
+		"nav_links": [
+			{
+				"label": "linea automotiva",
+				"url": "linea-automotiva",
+				"style": "link",
+				"has_subnav": true,
+				"subnav_links": [
+					{
+						"label": "poliuretano",
+						"url": "poliuretano",
+						"style": "link"
+					},
+					{
+						"label": "acrilico",
+						"url": "acrilico",
+						"style": "link"
+					},
+					{
+						"label": "gloss",
+						"url": "gloss",
+						"style": "link"
+					},
+					{
+						"label": "protector de chasis",
+						"url": "protector-de-chasis",
+						"style": "link"
+					},
+					{
+						"label": "masilla",
+						"url": "masilla",
+						"style": "link"
+					},
+					{
+						"label": "primer",
+						"url": "primer",
+						"style": "link"
+					},
+					{
+						"label": "mateante",
+						"url": "mateante",
+						"style": "link"
+					},
+					{
+						"label": "kit",
+						"url": "kit",
+						"style": "link"
+					}
+				]
+			},
+			{
+				"label": "servicios",
+				"url": "servicios",
+				"style": "link",
+				"has_subnav": false
+			},
+			{
+				"label": "contacto",
+				"url": "contacto",
+				"style": "link",
+				"has_subnav": false
+			}
+		]
+	},
+	"footer": {
+		"content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=libris&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>",
+
+		"has_social": true,
+		"social_links": [
+			{
+				"label": "Twitter",
+				"url": "https://twitter.com/",
+				"style": "icon",
+				"icon_class": "twitter",
+				"new_window": true
+			},
+			{
+				"label": "LinkedIn",
+				"url": "https://www.linkedin.com/",
+				"style": "icon",
+				"icon_class": "linkedin",
+				"new_window": true
+			},
+			{
+				"label": "GitHub",
+				"url": "https://github.com/",
+				"style": "icon",
+				"icon_class": "github",
+				"new_window": true
+			}
+		]
+	},
+	"homeSliders": [
+		{
+			"title": "Venta Hasta 50% De Descuento",
+			"content": "oferta especial",
+			"image": "https://www.anypsa.com.pe/aplication/webroot/imgs/catalogo/181103052847z4_7500.png"
+		},
+		{
+			"title": "Venta Hasta 40% De Descuento",
+			"content": "oferta especial",
+			"image": "https://www.anypsa.com.pe/aplication/webroot/imgs/catalogo/200221035708ultra-up-640.jpg"
+		},
+		{
+			"title": "Venta Hasta 30% De Descuento",
+			"content": "oferta especial",
+			"image": "https://www.anypsa.com.pe/aplication/webroot/imgs/catalogo/210203075038kit-barniz-z5.png"
+		}
+	],
+	"homeBanners": [
+		{
+			"title": "Venta Hasta 50% De Descuento",
+			"content": "oferta especial",
+			"image": "https://res.cloudinary.com/dvcyhn0lj/image/upload/v1647098140/piccoletti/banner/cat-1_hq8iu2.jpg"
+		},
+		{
+			"title": "Venta Hasta 40% De Descuento",
+			"content": "oferta especial",
+			"image": "https://res.cloudinary.com/dvcyhn0lj/image/upload/v1647098139/piccoletti/banner/cat-2_cgsu0w.jpg"
+		},
+		{
+			"title": "Venta Hasta 30% De Descuento",
+			"content": "oferta especial",
+			"image": "https://res.cloudinary.com/dvcyhn0lj/image/upload/v1647615331/piccoletti/banner/3sideways-shot-of-ginger-male-with-trendy-haircut-t-TSVU2BJ_kbsjxu.jpg"
+		}
+	]
+}

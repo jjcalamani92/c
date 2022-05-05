@@ -1,0 +1,89 @@
+@use '../global' as *;
+
+.detail {
+  @include grid(2,3rem);
+  
+  .content {
+    .product-title {
+      @include titleProduct(5rem, $primaryText, capitalize, 700);
+    }
+    .price-rating{
+      display: flex;
+      justify-content: space-between;
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+    .product-rating {
+      @include iconText(3rem, $primaryColor);
+      span{
+        color: $primaryText;
+      }
+    }
+    .product-price {
+      @include titleProduct(3rem, $primaryText, capitalize, 700);
+      span {
+        font-weight: 400;
+      }
+      .last-price span {
+        color: $accentColor;
+        text-decoration: line-through;
+      }
+      .new-price span {
+        color: $darkPrimaryColor;
+      }
+    }
+    .product-detail {
+      h2 {
+        @include titleProduct(3rem, $primaryText, capitalize, 700);
+      }
+      p {
+        @include textProduct(2.2rem, $primaryText, 500);
+      }
+      ul{
+        li{
+          
+          padding-left: 1rem;
+          font-size: 2.2rem;
+          padding: .5rem 0;
+          font-weight: 700;
+          .icon{
+            margin-right: 1rem;
+            color: $primaryColor;
+          }
+          span{
+            font-weight: 500;
+            text-transform: capitalize
+          }
+        }
+      }
+    }
+    .purchase-info{
+      display: flex;
+      justify-content: space-between;
+      .btn{
+        margin-top: 0;
+        border-radius: 2.5rem;
+      }
+      @include mobile{
+        flex-direction: column;
+      }
+    }
+    .social-link{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      .title{
+        @include title(3rem, $primaryText, capitalize, 700);
+        margin-right: 2rem;
+      }
+      @include mobile{
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+@include tablet{
+  @include grid(1, 1rem);
+}
+}

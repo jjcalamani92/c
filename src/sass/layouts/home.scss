@@ -1,0 +1,92 @@
+@use '../global' as *;
+
+.home {
+  .slide {
+    @include grid(2, 1.5rem);
+    height: calc(90vh - 8rem);
+    align-items: center;
+    
+    .content {
+      span {
+        @include graphText(3rem);
+        text-transform: capitalize;
+      }
+
+      h3 {
+        @include titleText(8rem);
+        padding: 1rem 0;
+      }
+    }
+    .image {
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: 30vw;
+        object-fit: cover;
+      }
+    }
+  }
+  .swiper-pagination-bullet {
+    background: $primaryColor;
+
+    &.swiper-pagination-bullet-active {
+      background: $primaryColor;
+    }
+  }
+  @include tablet {
+    .slide {
+      height: auto;
+      @include grid(1, 1.5rem);
+      text-align: center;
+      flex-direction: column-reverse;
+      .content {
+        .btn{
+          margin-bottom: 5rem;
+        }
+        grid-row: 2;
+        span {
+          @include graphText(3rem);
+          text-transform: capitalize;
+        }
+  
+        h3 {
+          @include titleText(5rem);
+          padding: 1rem 0;
+        }
+      }
+      .image{
+        grid-row: 1;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  @include mobile{
+    .slide{
+      height: auto;
+      .btn{
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
+
+
+.product {
+@include grid(4,1.5rem);
+@include tablet {
+    @include grid(3,1rem);
+}
+@include mobile {
+    @include grid(2,1rem);
+}
+}
+.products {
+
+}
+
+.product-more {
+    
+}
+
